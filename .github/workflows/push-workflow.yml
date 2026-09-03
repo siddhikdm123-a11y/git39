@@ -2,15 +2,16 @@ name: Push Trigger Workflow
 on:
   push:
     branches:
-      -main:
+      - main
  jobs:
-   push-jobs:
-     runs-on: ububtu-latest
+   push-job:
+     runs-on: ubuntu-latest
      steps:
-      -name: Print Message
-       run:echo "Code was pushed to the main branch."
-       -name: Display Date and Time
-        run: date
+      - name: Print Message
+        run: echo "Code was pushed to the main branch."
+       - name: Display Date and Time
+         run: date
         -name: Display Working directiory
           run: pwd
         
+     
