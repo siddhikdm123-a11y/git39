@@ -1,0 +1,16 @@
+name: Push Trigger Workflow
+on:
+  push:
+    branches:
+       -main:
+ jobs:
+   push-jobs:
+     runs-on: ububtu-latest
+     steps:
+      -name: Print Message
+       run:echo "Code was pushed to the main branch."
+       -name: Display Date and Time
+        run: date
+        -name: Display Working directiory
+          run: pwd
+        
